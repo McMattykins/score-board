@@ -1,0 +1,83 @@
+body {
+    margin: 0 auto;
+    min-width: 500px;
+    max-width: 1200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    border: solid black 5px;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: navy;
+    color: white;
+    padding: 2em 0 1em;
+}
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title {
+    font-size: 3rem;
+    border: solid darkred 4px;
+}
+
+#period--title {
+    font-size: 2rem;
+    border: none;
+}
+
+#period--number {
+    margin-bottom: .75em;
+    padding: 0 1rem;  
+}
+
+.number {
+    font-size: 4rem;
+    background-color: black;
+    color: red;
+}
+
+button {
+    margin: .5em;
+    padding: .25em .5em;
+    background-color: navy;
+    border: solid grey 2px;
+    border-radius: 5px;
+    color: grey;
+    font-family: inherit;
+    font-size: large;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    border-color: white;
+}
+
+.score-btn {
+    flex-grow: 1;;
+}
+
+.score-btn:active {
+    background-color: blue;
+}
+
+#reset-btn {
+    background-color: darkred;
+}
+
+#reset-btn:active {
+    background-color: red;
+}

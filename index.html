@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>🏀 Basketball Scoreboard 🏀</title>
+</head>
+<body>
+    <div class="container">
+        <div class="child-container" id="home-container">
+            <h2 class="title" id="home--title">HOME</h2>
+            <div class="number" id="home--score"></div>
+            <div class="buttons container">
+                <button class="score-btn" name="home-1">+1</button>
+                <button class="score-btn" name="home-2">+2</button>
+                <button class="score-btn" name="home-3">+3</button>
+            </div>
+        </div>
+        <div class="child-container" id="mid-container">
+            <h2 class="title" id="period--title">Period</h2>
+            <div class="number" id="period--number"></div>
+            <button id="reset-btn">RESET</button>
+        </div>
+        <div class="child-container" id="away-container">
+            <h2 class="title" id="away--title">AWAY</h2>
+            <div class="number" id="away--score"></div>
+            <div class="buttons container">
+                <button class="score-btn" name="away-1">+1</button>
+                <button class="score-btn" name="away-2">+2</button>
+                <button class="score-btn" name="away-3">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
