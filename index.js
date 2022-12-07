@@ -18,6 +18,7 @@ const updateElems = () => {
     homeScoreElem.innerText = home.score
     awayScoreElem.innerText = away.score
     periodElem.innerHTML = period
+    highlightLeader()
 }
 
 const resetScore = () => {
@@ -45,3 +46,16 @@ for (const button of [...scoreButtons]) {
 }
 
 resetBtn.addEventListener("click", resetScore)
+
+function highlightLeader() {
+    const result = checkScores()
+    if (!result) {return}
+    document.getElementById(`${result[0]}--title`).style.setProperty("border-color", "red")
+    document.getElementById(`${result[1]}--title`).style.setProperty("border-color", "darkred")
+}
+
+function checkScores() {
+    return home.score > away.score 
+    ? ["home", "away"]
+    : away.score > home.score && ["away", "home"]
+}

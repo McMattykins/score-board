@@ -30,7 +30,8 @@ body {
 
 .title {
     font-size: 3rem;
-    border: solid darkred 4px;
+    border: solid 4px;
+    border-color: darkred;
 }
 
 #period--title {
